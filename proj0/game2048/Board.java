@@ -67,7 +67,9 @@ public class Board implements Iterable<Tile> {
     public Tile tile(int col, int row) {
         return vtile(col, row, viewPerspective);
     }
-
+    public Tile val(int u,int z){
+        return values[u][z];
+    }
     /** Clear the board to empty and reset the score. */
     public void clear() {
         for (Tile[] column : values) {
